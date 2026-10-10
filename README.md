@@ -1,3 +1,51 @@
+![Time Series Lab](assets/header.svg)
+
+# Time Series Lab
+
+**Python · Pandas · Statsmodels · Prophet · Validation temporelle**
+
+Dépôt d’entraînement aux séries temporelles dans mon parcours AI & Data Engineering. Il rassemble les supports et exercices du cours **Python for Time Series Forecasting**, de **Jesus Lopez**, sur LinkedIn Learning.
+
+[Parcours](#parcours) · [Exécution](#exécution-locale) · [Méthode](#méthode-de-lecture) · [Crédits](#crédits-et-support-original)
+
+## Parcours
+
+| Bloc | Compétences travaillées | Accès |
+| --- | --- | --- |
+| Fondations | Préparation, visualisation et décomposition des séries | [1_Foundation](notebooks/1_Foundation) |
+| Modélisation | Stationnarité, ARIMA, SARIMA, lissage et Prophet | [2_Modelling](notebooks/2_Modelling) |
+| Validation | Découpage temporel et validation walk-forward | [3_Validation](notebooks/3_Validation) |
+
+Les données présentes dans [data](data) comprennent notamment des séries EIA, FRED et UCI Irvine. Les consignes et hypothèses de chaque notebook restent la référence pour son exécution.
+
+## Exécution locale
+
+```bash
+git clone https://github.com/malikafofana/timeseriesentrainement1.git
+cd timeseriesentrainement1
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Sur Windows, activer l’environnement avec `.venv\Scripts\Activate.ps1`. Ouvrir ensuite un notebook dans un éditeur compatible Jupyter et sélectionner cet environnement Python. Une configuration Codespaces est également fournie dans le dépôt.
+
+## Méthode de lecture
+
+1. Observer la fréquence, les valeurs manquantes, la tendance et la saisonnalité.
+2. Respecter l’ordre chronologique pour séparer apprentissage et validation.
+3. Comparer les modèles sur une fenêtre de validation commune.
+4. Examiner les erreurs avant d’interpréter les prévisions.
+
+Ce dépôt est présenté comme un support d’apprentissage : il ne revendique pas un benchmark personnel validé, des performances en production ou l’écriture originale des supports de cours. Les dépendances du cours ne sont pas toutes figées ; leur compatibilité dépend de l’environnement utilisé.
+
+## Crédits et support original
+
+Cours : **Jesus Lopez / LinkedIn Learning**. Les mentions, licences et fichiers d’origine sont conservés.
+
+<details>
+<summary>Consulter la présentation originale du cours</summary>
+
 # Python for Time Series Forecasting
 
 Welcome to the repository for the LinkedIn Learning course **Python for Time Series Forecasting** by Jesus Lopez. The full course is available on [LinkedIn Learning](https://www.linkedin.com/learning/).
@@ -48,3 +96,8 @@ To work locally:
 
 Happy forecasting!
 
+</details>
+
+---
+
+[Profil de Malika Fofana](https://github.com/malikafofana) · [Telco Signal](https://github.com/malikafofana/telco-signal) · [Evidence Search](https://github.com/malikafofana/evidence-search) · [Alzheimer MRI Study](https://github.com/malikafofana/alzheimer-mri-study)
